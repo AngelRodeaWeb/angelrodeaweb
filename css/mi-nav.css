@@ -1,5 +1,6 @@
 mi-nav {
   display: block;
+  text-decoration: overline;
   background-color:
     var(--colorMiNav);
 }
