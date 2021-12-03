@@ -1,6 +1,17 @@
 mi-footer {
-  display: block;
-  margin: 1rem;
+  display: table;
   font-size: small;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  color: azure;
+  background-color: 
+    var(--colorMiFooter);
+}
+
+mi-footer p {
+  display: table-cell;
+  vertical-align: middle;
 }
