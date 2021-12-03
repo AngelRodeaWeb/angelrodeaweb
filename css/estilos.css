@@ -5,11 +5,16 @@
 :root {
   font-family: sans-serif;
   --col-active: #4646462c;
-  --color-header: white;
-  --colorMiNav: grey;
+  --color-header: #e7e2de;
+  --colorMiNav: #0072ce;
+}
+
+a {
+  color: azure;
 }
 
 body {
+  background-color: #e7e2de;
   max-width: 640px;
   margin: 0 auto;
   padding: 0.5rem;
