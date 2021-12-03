@@ -14,17 +14,14 @@ button{
   background-color: #0072ce;
   color: azure;
   border-color: #006fca;
-  width: 100px;
+  margin: .8em;
+  width: 120px;
   height: 32px;
 }
 
 button:hover{
   background-color: #0061b1;
   cursor: pointer;
-}
-
-body button {
-  margin: 1em;
 }
 
 a {
