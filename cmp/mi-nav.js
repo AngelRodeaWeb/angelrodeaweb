@@ -16,6 +16,10 @@ class MiNav extends HTMLElement {
           <a href="index.html">
             Sesión Principal</a>
         </li>
+        <li>
+          <a href="chat.html">
+            Cerrar Sesion</a>
+        </li>
       </ul>`;
     this.ul =
       this.querySelector("ul");
@@ -35,19 +39,17 @@ class MiNav extends HTMLElement {
       const roles =
         await cargaRoles(
           usu.email);
-     if (roles.has("Cliente")) {
+      if (roles.has("Cliente")) {
         html += /* html */
           `<li>
-            <a href=
-              "chat.html">Chat</a>
+            <a href= "chat.html">Chat</a>
           </li>`;
       }
       if (roles.has(
         "Administrador")) {
         html += /* html */
           `<li>
-            <a href=
-"pacientes.html">Pacientes</a>
+            <a href= "pacientes.html">Pacientes</a>
           </li>`;
       }
       this.ul.innerHTML += html;
@@ -57,9 +59,9 @@ class MiNav extends HTMLElement {
 
 /** @type {HTMLFormElement} */
 const forma = document["forma"];
-    forma.terminarSesión.
-      addEventListener(
-        "click", terminaSesión);
+forma.terminarSesión.
+  addEventListener(
+    "click", terminaSesión);
 
 customElements.define(
   "mi-nav", MiNav);
