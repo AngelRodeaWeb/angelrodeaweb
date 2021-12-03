@@ -1,5 +1,5 @@
 import {
-  cargaRoles, terminaSesión
+  cargaRoles
 } from "../js/seguridad.js";
 import {
   getAuth
@@ -15,10 +15,6 @@ class MiNav extends HTMLElement {
         <li>
           <a href="index.html">
             Sesión Principal</a>
-        </li>
-        <li>
-          <a href="chat.html">
-            Cerrar Sesion</a>
         </li>
       </ul>`;
     this.ul =
@@ -39,29 +35,25 @@ class MiNav extends HTMLElement {
       const roles =
         await cargaRoles(
           usu.email);
-      if (roles.has("Cliente")) {
+     if (roles.has("Cliente")) {
         html += /* html */
           `<li>
-            <a href= "chat.html">Chat</a>
+            <a href=
+              "chat.html">Chat</a>
           </li>`;
       }
       if (roles.has(
         "Administrador")) {
         html += /* html */
           `<li>
-            <a href= "pacientes.html">Pacientes</a>
+            <a href=
+"pacientes.html">Pacientes</a>
           </li>`;
       }
       this.ul.innerHTML += html;
     }
   }
 }
-
-/** @type {HTMLFormElement} */
-const forma = document["forma"];
-forma.terminarSesión.
-  addEventListener(
-    "click", terminaSesión);
 
 customElements.define(
   "mi-nav", MiNav);
