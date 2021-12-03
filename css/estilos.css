@@ -24,10 +24,6 @@ button:hover{
   cursor: pointer;
 }
 
-a {
-  color: azure;
-}
-
 body {
   background-color: #e7e2de;
   max-width: 100%;
