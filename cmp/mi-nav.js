@@ -1,5 +1,5 @@
 import {
-  cargaRoles
+  cargaRoles, terminaSesión
 } from "../js/seguridad.js";
 import {
   getAuth
@@ -54,6 +54,12 @@ class MiNav extends HTMLElement {
     }
   }
 }
+
+/** @type {HTMLFormElement} */
+const forma = document["forma"];
+    forma.terminarSesión.
+      addEventListener(
+        "click", terminaSesión);
 
 customElements.define(
   "mi-nav", MiNav);
