@@ -14,11 +14,14 @@ a {
   text-decoration: none;
 }
 
+body div {
+  margin: 1.4em;
+}
+
 button{
   background-color: #0072ce;
   color: azure;
   border-color: #006fca;
-  margin: .8em;
   width: 120px;
   height: 32px;
 }
