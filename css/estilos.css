@@ -10,6 +10,10 @@
   --colorMiFooter: #0072ce;
 }
 
+a {
+  text-decoration: none;
+}
+
 button{
   background-color: #0072ce;
   color: azure;
